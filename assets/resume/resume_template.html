@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sushant Ranjan - Resume</title>
+  <style>
+    @page {
+      margin: 14mm 16mm;
+      size: A4 portrait;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.45;
+      font-size: 10pt;
+      background: #ffffff;
+    }
+    .header {
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .title {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #2563eb;
+      margin-top: 2px;
+    }
+    .contact-line {
+      margin-top: 6px;
+      font-size: 9pt;
+      color: #475569;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .contact-line a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .section {
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 6px;
+    }
+    .item {
+      margin-bottom: 7px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .item-title {
+      font-weight: 700;
+      color: #0f172a;
+      font-size: 10pt;
+    }
+    .item-subtitle {
+      font-weight: 600;
+      color: #334155;
+      font-size: 9.5pt;
+    }
+    .item-date {
+      font-size: 8.5pt;
+      color: #64748b;
+      font-weight: 500;
+    }
+    ul {
+      margin-left: 16px;
+      margin-top: 3px;
+    }
+    li {
+      margin-bottom: 2px;
+      font-size: 9pt;
+      color: #334155;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      row-gap: 4px;
+      font-size: 9pt;
+    }
+    .skills-label {
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .skills-content {
+      color: #334155;
+    }
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 8.5pt;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Sushant Ranjan</h1>
+    <div class="title">Full-Stack Developer | Competitive Programmer | CSE Student</div>
+    <div class="contact-line">
+      <span>Email: sushantranjan129@gmail.com</span>
+      <span>•</span>
+      <span>GitHub: github.com/sushantranjan912</span>
+      <span>•</span>
+      <span>LinkedIn: linkedin.com/in/sushantranjan912</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">Lovely Professional University</span>
+        <span class="item-date">Aug 2024 – Present</span>
+      </div>
+      <div class="item-header">
+        <span class="item-subtitle">Bachelor of Technology in Computer Science & Engineering</span>
+        <span class="item-date"><strong>CGPA: 8.78 / 10</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skills-label">Languages:</div>
+      <div class="skills-content">C, C++, Java, Python, JavaScript, SQL</div>
+      
+      <div class="skills-label">Frontend:</div>
+      <div class="skills-content">HTML5, CSS3, JavaScript (ES6+), React.js</div>
+      
+      <div class="skills-label">Backend & DB:</div>
+      <div class="skills-content">Node.js, Express.js, REST APIs, MongoDB, SQL</div>
+      
+      <div class="skills-label">Core CS:</div>
+      <div class="skills-content">Data Structures & Algorithms, Object-Oriented Programming (OOP), DBMS, Computer Networks, Operating Systems, Software Engineering</div>
+      
+      <div class="skills-label">Tools & Env:</div>
+      <div class="skills-content">Git, GitHub, VS Code, Linux</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">JanSetu — Civic Innovation Platform</span>
+          <span class="badge">React.js</span>
+          <span class="badge">Node.js</span>
+          <span class="badge">Express.js</span>
+          <span class="badge">MongoDB</span>
+          <span class="badge">Python</span>
+        </div>
+        <span class="item-date">Live: jansetu-h177.onrender.com</span>
+      </div>
+      <ul>
+        <li>Architected and developed a full-stack civic platform connecting citizens, administration, universities, and industries to systematically solve civic challenges.</li>
+        <li>Built citizen problem reporting, admin verification & assignment pipelines, university solution proposal workflows, and industry collaboration modules.</li>
+        <li>Engineered role-based access control (RBAC) with secure JWT authentication and integrated AI-based industry matching using Python and Scikit-learn.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Personal Training Management System</span>
+          <span class="badge">Node.js</span>
+          <span class="badge">Express.js</span>
+          <span class="badge">MongoDB</span>
+          <span class="badge">JWT</span>
+          <span class="badge">REST APIs</span>
+        </div>
+        <span class="item-date">Full-Stack Application</span>
+      </div>
+      <ul>
+        <li>Developed an end-to-end training management platform featuring separate Admin and Employee dashboards with role-based access control.</li>
+        <li>Built modular RESTful APIs for course management, employee enrollment, interactive progress tracking, and feedback collection.</li>
+        <li>Implemented analytics visualizations for training metrics and automated verifiable certificate generation upon course completion.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experience & Training</div>
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">Infosys Virtual Internship — RoadSafe Analytics</span>
+        <span class="item-date">Feb 2026 – Apr 2026</span>
+      </div>
+      <div class="item-subtitle">Infosys Springboard</div>
+      <ul>
+        <li>Engaged in industry-oriented software engineering practices, data modeling, and structured problem-solving.</li>
+        <li>Engineered interactive Power BI dashboards for road accident exploratory data analysis, utilizing Power Query to track KPIs and accident trends.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">C++ Object-Oriented Programming Training</span>
+        <span class="item-date">Cipher Schools</span>
+      </div>
+      <div class="item-subtitle">Core C++ & Software Engineering Principles</div>
+      <ul>
+        <li>Mastered core OOP paradigms: inheritance, abstraction, encapsulation, and polymorphism with memory management.</li>
+        <li>Constructed an OOP-based Shape Hierarchy system demonstrating virtual functions, runtime polymorphism, and clean code principles.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Achievements & Competitive Programming</div>
+    <ul>
+      <li><strong>Flipkart GRiD 8.0:</strong> Qualified as Semifinalist in the flagship national engineering challenge.</li>
+      <li><strong>LeetCode:</strong> Solved 500+ algorithmic problems across Data Structures & Algorithms | Contest Rating: 1440.</li>
+      <li><strong>CodeChef:</strong> 250+ Problems solved | 2-Star Coder (Rating: 1401).</li>
+      <li><strong>Codeforces:</strong> Rating: 930.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <ul>
+      <li><strong>Oracle Data Platform 2025 Certified Foundations Associate</strong> — Oracle University (June 2026)</li>
+      <li><strong>Internship 6.0 (B13): Road Accidents Exploratory Data Analysis</strong> — Infosys Springboard (April 2026)</li>
+    </ul>
+  </div>
+</body>
+</html>

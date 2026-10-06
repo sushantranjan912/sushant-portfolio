@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Sushant Ranjan | Full-Stack Developer & Competitive Programmer</title>
+  <meta name="title" content="Sushant Ranjan | Full-Stack Developer & Competitive Programmer">
+  <meta name="description" content="Portfolio of Sushant Ranjan — Computer Science & Engineering student, full-stack developer and competitive programmer building practical software and solving real-world problems.">
+  <meta name="keywords" content="Sushant Ranjan, Full-Stack Developer, Competitive Programmer, Computer Science, Software Engineer, JanSetu, React, Node.js, C++, DSA, SDE Portfolio">
+  <meta name="author" content="Sushant Ranjan">
+  <meta name="theme-color" content="#08090D">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/sushantranjan912">
+  <meta property="og:title" content="Sushant Ranjan | Full-Stack Developer & Competitive Programmer">
+  <meta property="og:description" content="Computer Science & Engineering student, full-stack developer and competitive programmer building practical software, solving algorithmic problems, and turning ideas into scalable digital solutions.">
+  <meta property="og:image" content="assets/images/jansetu-preview.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Sushant Ranjan | Full-Stack Developer & Competitive Programmer">
+  <meta property="twitter:description" content="Computer Science & Engineering student, full-stack developer and competitive programmer building practical software and solving algorithmic problems.">
+  <meta property="twitter:image" content="assets/images/jansetu-preview.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sushant Ranjan",
+    "jobTitle": "Full-Stack Developer & Competitive Programmer",
+    "url": "https://github.com/sushantranjan912",
+    "sameAs": [
+      "https://github.com/sushantranjan912",
+      "https://www.linkedin.com/in/sushantranjan912/",
+      "https://leetcode.com/u/sushant_0912/",
+      "https://www.codechef.com/users/sushant_0912",
+      "https://codeforces.com/profile/sushantranjan219"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Lovely Professional University"
+    },
+    "knowsAbout": ["Full-Stack Development", "Data Structures & Algorithms", "React.js", "Node.js", "C++", "Python", "MongoDB"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Background Interactive Mesh & Grid -->
+  <div class="bg-wrapper" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-radial-glow glow-1"></div>
+    <div class="bg-radial-glow glow-2"></div>
+    <div class="bg-radial-glow glow-3"></div>
+    <canvas id="ambient-canvas"></canvas>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Sticky Glassmorphism Header / Navigation -->
+  <header id="site-header" class="site-header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#home" class="brand" aria-label="Sushant Ranjan Portfolio Home">
+        <div class="brand-monogram">SR</div>
+        <div class="brand-info">
+          <span class="brand-name">Sushant Ranjan</span>
+          <span class="brand-status"><span class="status-dot"></span>Available for Roles</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Navbar Action: Resume -->
+      <div class="nav-actions">
+        <a href="assets/resume/Sushant_Ranjan_Resume.pdf" download="Sushant_Ranjan_Resume.pdf" class="btn btn-outline btn-sm resume-nav-btn" id="nav-resume-btn" aria-label="Download Sushant Ranjan's Resume">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#achievements" class="mobile-link">Achievements</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li class="mobile-resume-li">
+          <a href="assets/resume/Sushant_Ranjan_Resume.pdf" download="Sushant_Ranjan_Resume.pdf" class="btn btn-primary btn-block">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Resume
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-socials">
+        <a href="https://github.com/sushantranjan912" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sushantranjan912/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://leetcode.com/u/sushant_0912/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .271 4.735 5.46 5.46 0 0 0 4.126 2.748 5.615 5.615 0 0 0 1.25.042 5.54 5.54 0 0 0 3.864-1.78l3.645-3.843a1.376 1.376 0 1 0-1.99-1.905l-3.64 3.839a2.76 2.76 0 0 1-1.92.89 2.8 2.8 0 0 1-.628-.02 2.72 2.72 0 0 1-2.05-1.37 2.78 2.78 0 0 1-.137-2.38 2.65 2.65 0 0 1 .61-1.06l3.854-4.127 5.4-5.788a1.374 1.374 0 0 0-.987-2.344zm7.625 10.967H10.15a1.375 1.375 0 0 0 0 2.75h10.958a1.375 1.375 0 0 0 0-2.75z"/></svg>
+        </a>
+        <a href="https://www.codechef.com/users/sushant_0912" target="_blank" rel="noopener noreferrer" aria-label="CodeChef">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2a9.988 9.988 0 0 0-7.07 2.93 10.007 10.007 0 0 0 0 14.14 9.988 9.988 0 0 0 14.14 0 9.988 9.988 0 0 0 0-14.14A9.957 9.957 0 0 0 12.012 2zm0 3.333a6.655 6.655 0 0 1 4.717 1.953 6.667 6.667 0 0 1 0 9.428 6.655 6.655 0 0 1-4.717 1.953c-1.77 0-3.435-.69-4.686-1.94-1.251-1.252-1.94-2.917-1.94-4.687s.689-3.435 1.94-4.686a6.655 6.655 0 0 1 4.686-2.021z"/></svg>
+        </a>
+        <a href="https://codeforces.com/profile/sushantranjan219" target="_blank" rel="noopener noreferrer" aria-label="Codeforces">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 7.5a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-3 0v-12a1.5 1.5 0 0 1 1.5-1.5zm7.5-6a1.5 1.5 0 0 1 1.5 1.5v18a1.5 1.5 0 0 1-3 0V3a1.5 1.5 0 0 1 1.5-1.5zm7.5 10.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-3 0V13.5a1.5 1.5 0 0 1 1.5-1.5z"/></svg>
+        </a>
+        <a href="mailto:sushantranjan129@gmail.com" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section section-padding">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Top Badge -->
+          <div class="hero-pill reveal">
+            <span class="pill-spark">⚡</span>
+            <span>B.Tech CSE &bull; LPU &bull; Class of 2028</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="text-gradient">Sushant Ranjan.</span>
+          </h1>
+
+          <!-- Role Typing / Subtitle -->
+          <div class="hero-role-wrapper reveal">
+            <span class="hero-role-static">Full-Stack Developer</span>
+            <span class="role-separator">&bull;</span>
+            <span class="hero-role-dynamic" id="dynamic-role-text">Competitive Programmer</span>
+          </div>
+
+          <!-- Positioning Statement -->
+          <p class="hero-description reveal">
+            Computer Science &amp; Engineering student passionate about full-stack development, data structures, competitive programming, and building real-world software solutions.
+          </p>
+
+          <!-- Core Call to Actions -->
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary" id="hero-view-work">
+              <span>View My Work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="assets/resume/Sushant_Ranjan_Resume.pdf" download="Sushant_Ranjan_Resume.pdf" class="btn btn-secondary" id="hero-download-resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Links Underneath -->
+          <div class="hero-socials reveal">
+            <span class="social-label">Connect:</span>
+            <div class="social-links-row">
+              <a href="https://github.com/sushantranjan912" target="_blank" rel="noopener noreferrer" class="social-chip" title="GitHub Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/sushantranjan912/" target="_blank" rel="noopener noreferrer" class="social-chip" title="LinkedIn Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://leetcode.com/u/sushant_0912/" target="_blank" rel="noopener noreferrer" class="social-chip" title="LeetCode Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .271 4.735 5.46 5.46 0 0 0 4.126 2.748 5.615 5.615 0 0 0 1.25.042 5.54 5.54 0 0 0 3.864-1.78l3.645-3.843a1.376 1.376 0 1 0-1.99-1.905l-3.64 3.839a2.76 2.76 0 0 1-1.92.89 2.8 2.8 0 0 1-.628-.02 2.72 2.72 0 0 1-2.05-1.37 2.78 2.78 0 0 1-.137-2.38 2.65 2.65 0 0 1 .61-1.06l3.854-4.127 5.4-5.788a1.374 1.374 0 0 0-.987-2.344zm7.625 10.967H10.15a1.375 1.375 0 0 0 0 2.75h10.958a1.375 1.375 0 0 0 0-2.75z"/></svg>
+                <span>LeetCode</span>
+              </a>
+              <a href="https://www.codechef.com/users/sushant_0912" target="_blank" rel="noopener noreferrer" class="social-chip" title="CodeChef Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.012 2a9.988 9.988 0 0 0-7.07 2.93 10.007 10.007 0 0 0 0 14.14 9.988 9.988 0 0 0 14.14 0 9.988 9.988 0 0 0 0-14.14A9.957 9.957 0 0 0 12.012 2zm0 3.333a6.655 6.655 0 0 1 4.717 1.953 6.667 6.667 0 0 1 0 9.428 6.655 6.655 0 0 1-4.717 1.953c-1.77 0-3.435-.69-4.686-1.94-1.251-1.252-1.94-2.917-1.94-4.687s.689-3.435 1.94-4.686a6.655 6.655 0 0 1 4.686-2.021z"/></svg>
+                <span>CodeChef</span>
+              </a>
+              <a href="https://codeforces.com/profile/sushantranjan219" target="_blank" rel="noopener noreferrer" class="social-chip" title="Codeforces Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 7.5a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-3 0v-12a1.5 1.5 0 0 1 1.5-1.5zm7.5-6a1.5 1.5 0 0 1 1.5 1.5v18a1.5 1.5 0 0 1-3 0V3a1.5 1.5 0 0 1 1.5-1.5zm7.5 10.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-3 0V13.5a1.5 1.5 0 0 1 1.5-1.5z"/></svg>
+                <span>Codeforces</span>
+              </a>
+              <a href="mailto:sushantranjan129@gmail.com" class="social-chip" title="Direct Email">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Developer Dashboard / Code Panel -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="terminal-card">
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                sushant@dev-workstation: ~/portfolio
+              </div>
+              <div class="terminal-status">
+                <span class="pulse-indicator"></span>
+                <span>Active</span>
+              </div>
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="terminal-body font-mono">
+              <div class="term-line"><span class="prompt">$</span> <span class="term-cmd">curl -s sushant/identity.json</span></div>
+              <div class="term-output code-block">
+                <span class="syn-bracket">{</span><br>
+                &nbsp;&nbsp;<span class="syn-key">"engineer"</span>: <span class="syn-str">"Sushant Ranjan"</span>,<br>
+                &nbsp;&nbsp;<span class="syn-key">"education"</span>: <span class="syn-str">"B.Tech CSE @ LPU"</span>,<br>
+                &nbsp;&nbsp;<span class="syn-key">"cgpa"</span>: <span class="syn-num">8.78</span>,<br>
+                &nbsp;&nbsp;<span class="syn-key">"focus"</span>: [<span class="syn-str">"Full-Stack"</span>, <span class="syn-str">"DSA"</span>, <span class="syn-str">"System Design"</span>],<br>
+                &nbsp;&nbsp;<span class="syn-key">"dsa_solved"</span>: <span class="syn-num">750</span>,<br>
+                &nbsp;&nbsp;<span class="syn-key">"featured"</span>: <span class="syn-str">"JanSetu Civic Platform"</span>,<br>
+                &nbsp;&nbsp;<span class="syn-key">"status"</span>: <span class="syn-val">"ready_for_impact"</span><br>
+                <span class="syn-bracket">}</span>
+              </div>
+
+              <div class="term-line mt-2"><span class="prompt">$</span> <span class="term-cmd">git status -s</span></div>
+              <div class="term-output text-success">
+                <span>&#10003; On branch main &bull; Ready for deployment &amp; interviews</span>
+              </div>
+
+              <div class="term-line mt-2"><span class="prompt">$</span> <span class="term-cursor">_</span></div>
+            </div>
+
+            <!-- Floating Badge Overlay 1 -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon">&#128640;</div>
+              <div class="badge-text">
+                <span class="badge-heading">Featured Project</span>
+                <span class="badge-sub">JanSetu &bull; Live Platform</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge Overlay 2 -->
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon">&#9874;</div>
+              <div class="badge-text">
+                <span class="badge-heading">Competitive Programming</span>
+                <span class="badge-sub">500+ LeetCode &bull; 250+ CodeChef</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ==================== HERO STATS SECTION ==================== -->
+      <div class="container mt-stats">
+        <div class="stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-card reveal" data-delay="0">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"></path><path d="M8 6l-6 6 6 6"></path></svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-number-row">
+                <span class="stat-count" data-target="500">0</span><span class="stat-suffix">+</span>
+              </div>
+              <div class="stat-label">LeetCode Problems</div>
+            </div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card reveal" data-delay="100">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-number-row">
+                <span class="stat-count" data-target="250">0</span><span class="stat-suffix">+</span>
+              </div>
+              <div class="stat-label">CodeChef Problems</div>
+            </div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card reveal" data-delay="200">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-number-row">
+                <span class="stat-count" data-target="930">0</span>
+              </div>
+              <div class="stat-label">Codeforces Rating</div>
+            </div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card reveal" data-delay="300">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <div class="stat-content">
+              <div class="stat-number-row">
+                <span class="stat-count" data-target="8.78" data-decimals="2">0.00</span>
+              </div>
+              <div class="stat-label">CGPA (B.Tech CSE)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">ENGINEERING PROFILE</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging strong theoretical computer science foundations with pragmatic product development.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Story & Narrative -->
+          <div class="about-story-card reveal">
+            <div class="card-glow-edge"></div>
+            <p class="about-lead">
+              I'm a Computer Science &amp; Engineering student at <strong class="text-white">Lovely Professional University</strong> focused on software development, DSA, and building practical full-stack applications.
+            </p>
+            <p class="about-body">
+              My engineering journey is driven by a deep commitment to problem solving and continuous learning. Whether architecting collaborative civic platforms or dissecting optimal time and space complexities in algorithmic challenges, I strive to write clean, maintainable, and high-performance code.
+            </p>
+            
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-check">&#10003;</span>
+                <span><strong>Strong interest in software engineering</strong> &amp; modern system design</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-check">&#10003;</span>
+                <span><strong>Full-stack development</strong> across modern web ecosystems</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-check">&#10003;</span>
+                <span><strong>Competitive programming &amp; DSA</strong> with 750+ algorithmic solutions</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-check">&#10003;</span>
+                <span><strong>Building real-world projects</strong> that serve genuine community needs</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-check">&#10003;</span>
+                <span><strong>Continuous learning</strong> of emerging technologies and industry best practices</span>
+              </div>
+            </div>
+
+            <div class="about-cta-row">
+              <a href="#projects" class="btn btn-secondary btn-sm">
+                <span>Explore Featured Work</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <button class="btn btn-ghost btn-sm copy-email-btn" data-email="sushantranjan129@gmail.com" aria-label="Copy Sushant's email address">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Engineering Principles -->
+          <div class="about-pillars reveal">
+            <div class="pillar-card">
+              <div class="pillar-icon">&#9881;</div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Full-Stack Architecture</h3>
+                <p class="pillar-desc">Designing robust RESTful APIs, decoupled frontend interfaces, schema models, and secure authentication flows.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">&#128161;</div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Algorithmic Problem Solving</h3>
+                <p class="pillar-desc">Practicing consistent competitive programming across LeetCode, CodeChef, and Codeforces to master time/space tradeoffs.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">&#128640;</div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Real-World Product Delivery</h3>
+                <p class="pillar-desc">Transforming complex socio-technical ideas into working production web applications with scalable databases.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">&#127891;</div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Academic Excellence &amp; Growth</h3>
+                <p class="pillar-desc">Maintaining a stellar 8.78 CGPA in B.Tech CSE while actively participating in national competitions like Flipkart GRiD 8.0.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">TECHNICAL CAPABILITIES</span>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+          <p class="section-subtitle">Verified technical proficiencies across languages, frontend, backend, core CS, and developer tooling.</p>
+        </div>
+
+        <div class="skills-grid-container">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Languages</h3>
+                <span class="category-subtitle">Core Syntax &amp; Programming</span>
+              </div>
+            </div>
+            <div class="badges-flex">
+              <span class="skill-pill"><span class="pill-dot"></span>C</span>
+              <span class="skill-pill"><span class="pill-dot"></span>C++</span>
+              <span class="skill-pill"><span class="pill-dot"></span>Java</span>
+              <span class="skill-pill"><span class="pill-dot"></span>Python</span>
+              <span class="skill-pill"><span class="pill-dot"></span>JavaScript</span>
+              <span class="skill-pill"><span class="pill-dot"></span>SQL</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend -->
+          <div class="skill-category-card reveal" data-delay="100">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Frontend</h3>
+                <span class="category-subtitle">Client-Side Engineering</span>
+              </div>
+            </div>
+            <div class="badges-flex">
+              <span class="skill-pill"><span class="pill-dot"></span>HTML5</span>
+              <span class="skill-pill"><span class="pill-dot"></span>CSS3</span>
+              <span class="skill-pill"><span class="pill-dot"></span>JavaScript (ES6+)</span>
+              <span class="skill-pill"><span class="pill-dot"></span>React.js</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend -->
+          <div class="skill-category-card reveal" data-delay="200">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Backend</h3>
+                <span class="category-subtitle">Server-Side &amp; Microservices</span>
+              </div>
+            </div>
+            <div class="badges-flex">
+              <span class="skill-pill"><span class="pill-dot"></span>Node.js</span>
+              <span class="skill-pill"><span class="pill-dot"></span>Express.js</span>
+              <span class="skill-pill"><span class="pill-dot"></span>REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Database -->
+          <div class="skill-category-card reveal" data-delay="300">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Database</h3>
+                <span class="category-subtitle">Storage &amp; Data Modeling</span>
+              </div>
+            </div>
+            <div class="badges-flex">
+              <span class="skill-pill"><span class="pill-dot"></span>MongoDB</span>
+              <span class="skill-pill"><span class="pill-dot"></span>SQL</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Core CS -->
+          <div class="skill-category-card reveal" data-delay="400">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Core CS</h3>
+                <span class="category-subtitle">Foundations &amp; Paradigms</span>
+              </div>
+            </div>
+            <div class="badges-flex">
+              <span class="skill-pill"><span class="pill-dot"></span>Data Structures &amp; Algorithms</span>
+              <span class="skill-pill"><span class="pill-dot"></span>Object-Oriented Programming</span>
+              <span class="skill-pill"><span class="pill-dot"></span>DBMS</span>
+              <span class="skill-pill"><span class="pill-dot"></span>Computer Networks</span>
+              <span class="skill-pill"><span class="pill-dot"></span>Operating Systems</span>
+              <span class="skill-pill"><span class="pill-dot"></span>Software Engineering</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Tools -->
+          <div class="skill-category-card reveal" data-delay="500">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Tools &amp; DevOps</h3>
+                <span class="category-subtitle">Productivity &amp; Runtime</span>
+              </div>
+            </div>
+            <div class="badges-flex">
+              <span class="skill-pill"><span class="pill-dot"></span>Git</span>
+              <span class="skill-pill"><span class="pill-dot"></span>GitHub</span>
+              <span class="skill-pill"><span class="pill-dot"></span>VS Code</span>
+              <span class="skill-pill"><span class="pill-dot"></span>Linux</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION (STRICTLY TWO PROJECTS) ==================== -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">ENGINEERED SOFTWARE</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications engineered with modular architecture, robust APIs, and user-centric design.</p>
+        </div>
+
+        <div class="projects-wrapper">
+          
+          <!-- ⭐ FEATURED PROJECT 01 — JANSETU (VISUALLY LARGER) -->
+          <article class="project-featured-card reveal">
+            <div class="featured-badge-bar">
+              <span class="badge-featured-label">&#9733; FEATURED ARCHITECTURE</span>
+              <span class="badge-tech-tag">Full-Stack &bull; AI &bull; Civic Innovation</span>
+            </div>
+
+            <div class="featured-content-layout">
+              <!-- Visual Preview Area -->
+              <div class="project-visual-container">
+                <div class="browser-mockup-frame">
+                  <div class="browser-bar">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-amber"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="browser-url">https://jansetu-h177.onrender.com</span>
+                  </div>
+                  <div class="preview-img-wrapper">
+                    <img src="assets/images/jansetu-preview.jpg" alt="JanSetu Civic Innovation Platform Dashboard Preview" class="project-preview-img" loading="lazy">
+                    <div class="preview-overlay">
+                      <a href="https://jansetu-h177.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                        <span>Launch Live Platform</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content Area -->
+              <div class="featured-info-col">
+                <div class="project-meta-top">
+                  <span class="project-number">PROJECT 01</span>
+                  <span class="project-tag-pill">Civic Tech Ecosystem</span>
+                </div>
+
+                <h3 class="project-title-large">JanSetu &mdash; Connecting Problems, People &amp; Possibilities</h3>
+                
+                <p class="project-desc-text">
+                  A comprehensive civic innovation platform connecting citizens, administration, universities, and industries to collaboratively address real-world societal challenges.
+                </p>
+
+                <!-- Key Highlights List -->
+                <div class="project-features-list">
+                  <h4 class="features-headline">Key Architectural Features:</h4>
+                  <ul class="features-checklist">
+                    <li><span class="feat-bullet">&#9670;</span> Citizen problem reporting &amp; tracking</li>
+                    <li><span class="feat-bullet">&#9670;</span> Admin validation and workflow assignment</li>
+                    <li><span class="feat-bullet">&#9670;</span> University solution proposals system</li>
+                    <li><span class="feat-bullet">&#9670;</span> Industry collaboration modules</li>
+                    <li><span class="feat-bullet">&#9670;</span> Role-based workflows &amp; secure JWT authentication</li>
+                    <li><span class="feat-bullet">&#9670;</span> AI-based industry matching (Python &amp; Scikit-learn)</li>
+                    <li><span class="feat-bullet">&#9670;</span> MongoDB-based scalable data management</li>
+                  </ul>
+                </div>
+
+                <!-- Tech Stack Badges -->
+                <div class="project-stack">
+                  <span class="stack-badge">React.js</span>
+                  <span class="stack-badge">JavaScript</span>
+                  <span class="stack-badge">Node.js</span>
+                  <span class="stack-badge">Express.js</span>
+                  <span class="stack-badge">MongoDB</span>
+                  <span class="stack-badge">JWT</span>
+                  <span class="stack-badge">Python</span>
+                  <span class="stack-badge">Scikit-learn</span>
+                  <span class="stack-badge">REST APIs</span>
+                </div>
+
+                <!-- Action Buttons: Live Demo is visually primary -->
+                <div class="project-actions">
+                  <a href="https://jansetu-h177.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="jansetu-live-demo-btn">
+                    <span>Live Demo</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                  <a href="https://github.com/sushantranjan912/JanSetu" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="jansetu-github-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub Code</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 — PERSONAL TRAINING MANAGEMENT SYSTEM -->
+          <article class="project-secondary-card reveal">
+            <div class="secondary-content-layout">
+              <!-- Visual Preview Area -->
+              <div class="project-visual-container">
+                <div class="browser-mockup-frame">
+                  <div class="browser-bar">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-amber"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="browser-url">localhost:5000/api/dashboard</span>
+                  </div>
+                  <div class="preview-img-wrapper">
+                    <img src="assets/images/training-management-preview.jpg" alt="Personal Training Management System Dashboard Preview" class="project-preview-img" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content Area -->
+              <div class="secondary-info-col">
+                <div class="project-meta-top">
+                  <span class="project-number">PROJECT 02</span>
+                  <span class="project-tag-pill">Full-Stack &bull; REST API &bull; Authentication</span>
+                </div>
+
+                <h3 class="project-title-medium">Personal Training Management System</h3>
+                
+                <p class="project-desc-text">
+                  A full-stack training management platform with dedicated Admin and Employee dashboards designed to streamline skill-building programs and progress accountability.
+                </p>
+
+                <!-- Key Highlights List -->
+                <div class="project-features-list">
+                  <h4 class="features-headline">Key Architectural Features:</h4>
+                  <ul class="features-checklist-grid">
+                    <li><span class="feat-bullet">&#9670;</span> Admin &amp; Employee dashboards</li>
+                    <li><span class="feat-bullet">&#9670;</span> JWT authentication &amp; RBAC</li>
+                    <li><span class="feat-bullet">&#9670;</span> Employee &amp; course management</li>
+                    <li><span class="feat-bullet">&#9670;</span> Enrollment workflows &amp; tracking</li>
+                    <li><span class="feat-bullet">&#9670;</span> Feedback management &amp; analytics</li>
+                    <li><span class="feat-bullet">&#9670;</span> Automated certificate generation</li>
+                  </ul>
+                </div>
+
+                <!-- Tech Stack Badges -->
+                <div class="project-stack">
+                  <span class="stack-badge">Node.js</span>
+                  <span class="stack-badge">Express.js</span>
+                  <span class="stack-badge">MongoDB</span>
+                  <span class="stack-badge">JWT</span>
+                  <span class="stack-badge">REST APIs</span>
+                </div>
+
+                <!-- Action Button -->
+                <div class="project-actions">
+                  <a href="https://github.com/sushantranjan912" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="ptms-github-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View Repository on GitHub &nearr;</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE & TRAINING SECTION ==================== -->
+    <section id="experience" class="experience-section section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">PROFESSIONAL GROWTH</span>
+          <h2 class="section-title">Experience &amp; Training</h2>
+          <p class="section-subtitle">Structured industry internships and rigorous software engineering training.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header-row">
+                <div>
+                  <h3 class="timeline-role">Infosys Virtual Internship</h3>
+                  <div class="timeline-org">Infosys Springboard</div>
+                </div>
+                <div class="timeline-badge-date">Feb 2026 &ndash; Apr 2026</div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Participated in industry-oriented software development workflows and structured algorithmic problem-solving.</li>
+                <li>Developed <strong>RoadSafe Analytics</strong> &mdash; an end-to-end data intelligence initiative analyzing road accident safety metrics.</li>
+                <li>Built an interactive Power BI dashboard for multidimensional road accident analysis.</li>
+                <li>Leveraged Power Query and structured data modeling for calculating key performance indicators (KPIs) and accident trend analysis.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="t-tag">Data Modeling</span>
+                <span class="t-tag">Power BI</span>
+                <span class="t-tag">Power Query</span>
+                <span class="t-tag">Analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item reveal" data-delay="150">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header-row">
+                <div>
+                  <h3 class="timeline-role">C++ Object-Oriented Programming Training</h3>
+                  <div class="timeline-org">Cipher Schools</div>
+                </div>
+                <div class="timeline-badge-date">Intensive Training</div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Completed rigorous hands-on training in core C++ and modern Object-Oriented Programming principles.</li>
+                <li>Mastered key OOP fundamentals: inheritance, abstraction, encapsulation, and polymorphism.</li>
+                <li>Developed an OOP-based Shape Hierarchy project utilizing virtual functions and runtime polymorphism to solve modular geometric calculations.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="t-tag">C++</span>
+                <span class="t-tag">OOP</span>
+                <span class="t-tag">Polymorphism</span>
+                <span class="t-tag">Virtual Functions</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+    <section id="achievements" class="achievements-section section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">COMPETITIVE MILESTONES</span>
+          <h2 class="section-title">Honors &amp; Achievements</h2>
+          <p class="section-subtitle">National engineering contest accolades and competitive programming benchmarks.</p>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- Achievement 1: Flipkart GRiD -->
+          <div class="achievement-card reveal">
+            <div class="achieve-icon-box gradient-gold">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-2.34"></path><path d="M18 14.66V17c0 .55-.45 1-1 1h-2c-.55 0-1-.45-1-1v-2.34"></path><path d="M6 4h12a2 2 0 0 1 2 2v3a8 8 0 0 1-8 8 8 8 0 0 1-8-8V6a2 2 0 0 1 2-2z"></path></svg>
+            </div>
+            <div class="achieve-content">
+              <div class="achieve-badge">National Hackathon</div>
+              <h3 class="achieve-title">Flipkart GRiD 8.0</h3>
+              <div class="achieve-highlight">Semifinalist</div>
+              <p class="achieve-desc">Qualified as a semifinalist in Flipkart's flagship national engineering challenge competing against top tech universities across India.</p>
+            </div>
+          </div>
+
+          <!-- Achievement 2: LeetCode -->
+          <div class="achievement-card reveal" data-delay="100">
+            <div class="achieve-icon-box gradient-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .271 4.735 5.46 5.46 0 0 0 4.126 2.748 5.615 5.615 0 0 0 1.25.042 5.54 5.54 0 0 0 3.864-1.78l3.645-3.843a1.376 1.376 0 1 0-1.99-1.905l-3.64 3.839a2.76 2.76 0 0 1-1.92.89 2.8 2.8 0 0 1-.628-.02 2.72 2.72 0 0 1-2.05-1.37 2.78 2.78 0 0 1-.137-2.38 2.65 2.65 0 0 1 .61-1.06l3.854-4.127 5.4-5.788a1.374 1.374 0 0 0-.987-2.344zm7.625 10.967H10.15a1.375 1.375 0 0 0 0 2.75h10.958a1.375 1.375 0 0 0 0-2.75z"/></svg>
+            </div>
+            <div class="achieve-content">
+              <div class="achieve-badge">Algorithmic Problem Solving</div>
+              <h3 class="achieve-title">LeetCode</h3>
+              <div class="achieve-stats-row">
+                <div class="mini-stat">
+                  <span class="m-val counter" data-target="500">0</span><span class="m-plus">+</span>
+                  <span class="m-lbl">Problems</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="m-val counter" data-target="1440">0</span>
+                  <span class="m-lbl">Rating</span>
+                </div>
+              </div>
+              <p class="achieve-desc">Rigorous practice across binary trees, graphs, dynamic programming, two pointers, and greedy techniques.</p>
+            </div>
+          </div>
+
+          <!-- Achievement 3: CodeChef -->
+          <div class="achievement-card reveal" data-delay="200">
+            <div class="achieve-icon-box gradient-bronze">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2a9.988 9.988 0 0 0-7.07 2.93 10.007 10.007 0 0 0 0 14.14 9.988 9.988 0 0 0 14.14 0 9.988 9.988 0 0 0 0-14.14A9.957 9.957 0 0 0 12.012 2zm0 3.333a6.655 6.655 0 0 1 4.717 1.953 6.667 6.667 0 0 1 0 9.428 6.655 6.655 0 0 1-4.717 1.953c-1.77 0-3.435-.69-4.686-1.94-1.251-1.252-1.94-2.917-1.94-4.687s.689-3.435 1.94-4.686a6.655 6.655 0 0 1 4.686-2.021z"/></svg>
+            </div>
+            <div class="achieve-content">
+              <div class="achieve-badge">Competitive Contests</div>
+              <h3 class="achieve-title">CodeChef</h3>
+              <div class="achieve-stats-row">
+                <div class="mini-stat">
+                  <span class="m-val counter" data-target="250">0</span><span class="m-plus">+</span>
+                  <span class="m-lbl">Problems</span>
+                </div>
+                <div class="mini-stat">
+                  <span class="m-val">2-Star</span>
+                  <span class="m-lbl">1401 Rating</span>
+                </div>
+              </div>
+              <p class="achieve-desc">Regular competitive coder participating in Starters and Cook-Offs solving structured algorithmic puzzles.</p>
+            </div>
+          </div>
+
+          <!-- Achievement 4: Codeforces -->
+          <div class="achievement-card reveal" data-delay="300">
+            <div class="achieve-icon-box gradient-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 7.5a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-3 0v-12a1.5 1.5 0 0 1 1.5-1.5zm7.5-6a1.5 1.5 0 0 1 1.5 1.5v18a1.5 1.5 0 0 1-3 0V3a1.5 1.5 0 0 1 1.5-1.5zm7.5 10.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-3 0V13.5a1.5 1.5 0 0 1 1.5-1.5z"/></svg>
+            </div>
+            <div class="achieve-content">
+              <div class="achieve-badge">Global Competitive Rating</div>
+              <h3 class="achieve-title">Codeforces</h3>
+              <div class="achieve-stats-row">
+                <div class="mini-stat">
+                  <span class="m-val counter" data-target="930">0</span>
+                  <span class="m-lbl">Contest Rating</span>
+                </div>
+              </div>
+              <p class="achieve-desc">Practicing timed mathematical reasoning and edge-case testing under live contest pressure.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section id="education" class="education-section section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">ACADEMIC CREDENTIALS</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Rigorous undergraduate foundation in Computer Science &amp; Engineering.</p>
+        </div>
+
+        <div class="education-card reveal">
+          <div class="edu-icon-col">
+            <div class="university-crest">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+          </div>
+
+          <div class="edu-details-col">
+            <div class="edu-top-row">
+              <div>
+                <h3 class="edu-institution">Lovely Professional University</h3>
+                <div class="edu-degree">Bachelor of Technology &mdash; Computer Science &amp; Engineering</div>
+              </div>
+              <div class="edu-period">Aug 2024 &ndash; Present</div>
+            </div>
+
+            <p class="edu-summary">
+              Undertaking rigorous coursework spanning Data Structures, Analysis of Algorithms, Object-Oriented Software Development, Database Management Systems, Operating Systems, and Discrete Mathematics.
+            </p>
+
+            <div class="edu-grade-badge">
+              <span class="grade-label">Cumulative GPA:</span>
+              <span class="grade-score">8.78 / 10</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section id="certifications" class="certifications-section section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">FORMAL CREDENTIALS</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Industry-recognized technical certifications and verified course completions.</p>
+        </div>
+
+        <div class="certifications-grid">
+          
+          <!-- Certification 1 -->
+          <div class="cert-card reveal">
+            <div class="cert-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div class="cert-body">
+              <div class="cert-issuer">Oracle University &bull; June 2026</div>
+              <h3 class="cert-name">Oracle Data Platform 2025 Certified Foundations Associate</h3>
+              <p class="cert-desc">Validation of foundational cloud database infrastructure, data platforms, and enterprise data lifecycle management.</p>
+            </div>
+          </div>
+
+          <!-- Certification 2 -->
+          <div class="cert-card reveal" data-delay="150">
+            <div class="cert-icon-wrapper">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div class="cert-body">
+              <div class="cert-issuer">Infosys Springboard &bull; April 2026</div>
+              <h3 class="cert-name">Internship 6.0 (B13): Road Accidents Exploratory Data Analysis</h3>
+              <p class="cert-desc">Demonstrated competency in structured data preprocessing, exploratory data analysis, KPI visualization, and business analytics.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        
+        <div class="contact-cta-card reveal">
+          <div class="cta-glow-background" aria-hidden="true"></div>
+          
+          <div class="cta-content">
+            <span class="cta-tag">GET IN TOUCH</span>
+            <h2 class="cta-title">Let's Build Something Great.</h2>
+            <p class="cta-text">
+              Open to software development opportunities, summer internships, SDE roles, interesting collaborations, and challenging engineering problems.
+            </p>
+
+            <!-- Primary CTAs -->
+            <div class="cta-actions">
+              <a href="mailto:sushantranjan129@gmail.com" class="btn btn-primary btn-lg" id="contact-email-btn">
+                <span>Get In Touch</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="https://github.com/sushantranjan912" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" id="contact-github-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub &rarr;</span>
+              </a>
+            </div>
+
+            <!-- Direct Contact Info Cards -->
+            <div class="contact-channels">
+              <!-- Channel 1: Email -->
+              <div class="channel-card">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-info">
+                  <div class="channel-label">Email Address</div>
+                  <a href="mailto:sushantranjan129@gmail.com" class="channel-val font-mono">sushantranjan129@gmail.com</a>
+                </div>
+                <button class="channel-copy-btn copy-email-btn" data-email="sushantranjan129@gmail.com" title="Copy email address" aria-label="Copy Email">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Channel 2: LinkedIn -->
+              <div class="channel-card">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="channel-info">
+                  <div class="channel-label">LinkedIn Profile</div>
+                  <a href="https://www.linkedin.com/in/sushantranjan912/" target="_blank" rel="noopener noreferrer" class="channel-val">in/sushantranjan912</a>
+                </div>
+                <a href="https://www.linkedin.com/in/sushantranjan912/" target="_blank" rel="noopener noreferrer" class="channel-copy-btn" title="Open LinkedIn" aria-label="Open LinkedIn Profile">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+
+              <!-- Channel 3: GitHub -->
+              <div class="channel-card">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div class="channel-info">
+                  <div class="channel-label">GitHub Repository</div>
+                  <a href="https://github.com/sushantranjan912" target="_blank" rel="noopener noreferrer" class="channel-val">github.com/sushantranjan912</a>
+                </div>
+                <a href="https://github.com/sushantranjan912" target="_blank" rel="noopener noreferrer" class="channel-copy-btn" title="Open GitHub" aria-label="Open GitHub Profile">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== MINIMAL FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand-col">
+        <div class="footer-logo">
+          <span class="footer-logo-text">Sushant Ranjan</span>
+        </div>
+        <p class="footer-tagline">
+          Full-Stack Developer &bull; Competitive Programmer &bull; CSE Student
+        </p>
+        <p class="footer-statement">
+          Building practical software, solving algorithmic problems, and turning ideas into scalable digital solutions.
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social-col">
+        <h4 class="footer-heading">Profiles</h4>
+        <div class="footer-social-links">
+          <a href="https://github.com/sushantranjan912" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/sushantranjan912/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://leetcode.com/u/sushant_0912/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+          <a href="https://www.codechef.com/users/sushant_0912" target="_blank" rel="noopener noreferrer">CodeChef</a>
+          <a href="https://codeforces.com/profile/sushantranjan219" target="_blank" rel="noopener noreferrer">Codeforces</a>
+          <a href="mailto:sushantranjan129@gmail.com">Email</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="container footer-bottom">
+      <div class="footer-copy">
+        &copy; 2026 Sushant Ranjan. Built with HTML, CSS &amp; JavaScript.
+      </div>
+      <div class="footer-extra">
+        <span class="badge-status-dot"></span> Ready for SDE &amp; Internship Opportunities
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back To Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- JavaScript Application Bundle -->
+  <script src="script.js"></script>
+</body>
+</html>

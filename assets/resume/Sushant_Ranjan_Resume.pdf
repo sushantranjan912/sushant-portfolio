@@ -1,0 +1,166 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 3397 >>
+stream
+BT
+/F2 20 Tf
+50 785 Td
+(SUSHANT RANJAN) Tj
+0 -18 Td
+/F1 10 Tf
+(Full-Stack Developer | Competitive Programmer | CSE Student) Tj
+0 -16 Td
+/F1 8.5 Tf
+(Email: sushantranjan129@gmail.com  |  GitHub: github.com/sushantranjan912  |  LinkedIn: linkedin.com/in/sushantranjan912) Tj
+0 -22 Td
+/F2 11 Tf
+(EDUCATION) Tj
+0 -14 Td
+/F2 9.5 Tf
+(Lovely Professional University) Tj
+360 0 Td
+/F1 8.5 Tf
+(Aug 2024 - Present) Tj
+-360 -12 Td
+/F1 9 Tf
+(Bachelor of Technology in Computer Science & Engineering  |  CGPA: 8.78 / 10) Tj
+0 -20 Td
+/F2 11 Tf
+(TECHNICAL SKILLS) Tj
+0 -14 Td
+/F2 8.5 Tf
+(Languages: ) Tj
+60 0 Td
+/F1 8.5 Tf
+(C, C++, Java, Python, JavaScript, SQL) Tj
+-60 -12 Td
+/F2 8.5 Tf
+(Frontend: ) Tj
+60 0 Td
+/F1 8.5 Tf
+(HTML5, CSS3, JavaScript, React.js) Tj
+-60 -12 Td
+/F2 8.5 Tf
+(Backend: ) Tj
+60 0 Td
+/F1 8.5 Tf
+(Node.js, Express.js, REST APIs) Tj
+-60 -12 Td
+/F2 8.5 Tf
+(Database: ) Tj
+60 0 Td
+/F1 8.5 Tf
+(MongoDB, SQL) Tj
+-60 -12 Td
+/F2 8.5 Tf
+(Core CS: ) Tj
+60 0 Td
+/F1 8.5 Tf
+(Data Structures & Algorithms, OOP, DBMS, Computer Networks, OS, Software Eng) Tj
+-60 -12 Td
+/F2 8.5 Tf
+(Tools: ) Tj
+60 0 Td
+/F1 8.5 Tf
+(Git, GitHub, VS Code, Linux) Tj
+-60 -20 Td
+/F2 11 Tf
+(KEY PROJECTS) Tj
+0 -14 Td
+/F2 9.5 Tf
+(JanSetu -- Civic Innovation Platform) Tj
+280 0 Td
+/F1 8 Tf
+(React.js, Node.js, Express, MongoDB, JWT, Python) Tj
+-280 -12 Td
+/F1 8.5 Tf
+(- Civic innovation platform connecting citizens, administration, universities and industries.) Tj
+0 -11 Td
+(- Features: Citizen problem reporting, admin validation, university proposals, AI matching.) Tj
+0 -11 Td
+(- Live: https://jansetu-h177.onrender.com/  |  GitHub: github.com/sushantranjan912/JanSetu) Tj
+0 -15 Td
+/F2 9.5 Tf
+(Personal Training Management System) Tj
+280 0 Td
+/F1 8 Tf
+(Node.js, Express, MongoDB, JWT, REST APIs) Tj
+-280 -12 Td
+/F1 8.5 Tf
+(- Comprehensive full-stack platform featuring dedicated Admin and Employee dashboards.) Tj
+0 -11 Td
+(- Course management, enrollment workflows, progress tracking, analytics, and automated certs.) Tj
+0 -20 Td
+/F2 11 Tf
+(EXPERIENCE & TRAINING) Tj
+0 -14 Td
+/F2 9.5 Tf
+(Infosys Virtual Internship -- RoadSafe Analytics (Infosys Springboard)) Tj
+310 0 Td
+/F1 8.5 Tf
+(Feb 2026 - Apr 2026) Tj
+-310 -12 Td
+/F1 8.5 Tf
+(- Engineered interactive Power BI dashboard for exploratory data analysis of road accidents.) Tj
+0 -11 Td
+(- Utilized Power Query and structured data modeling for KPI insights and trend analytics.) Tj
+0 -14 Td
+/F2 9.5 Tf
+(C++ Object-Oriented Programming Training -- Cipher Schools) Tj
+0 -12 Td
+/F1 8.5 Tf
+(- Deep-dive hands-on training covering OOP: inheritance, abstraction, encapsulation, polymorphism.) Tj
+0 -11 Td
+(- Engineered OOP-based Shape Hierarchy application utilizing virtual functions and runtime polymorphism.) Tj
+0 -20 Td
+/F2 11 Tf
+(ACHIEVEMENTS & COMPETITIVE PROGRAMMING) Tj
+0 -14 Td
+/F1 8.5 Tf
+(- Flipkart GRiD 8.0: Semifinalist in India's flagship engineering competition.) Tj
+0 -12 Td
+(- LeetCode: Solved 500+ algorithmic problems across DSA | Contest Rating: 1440.) Tj
+0 -12 Td
+(- CodeChef: Solved 250+ algorithmic problems | 2-Star Coder (Rating: 1401).) Tj
+0 -12 Td
+(- Codeforces: Rating 930.) Tj
+0 -20 Td
+/F2 11 Tf
+(CERTIFICATIONS) Tj
+0 -14 Td
+/F1 8.5 Tf
+(- Oracle Data Platform 2025 Certified Foundations Associate (Oracle University -- June 2026)) Tj
+0 -12 Td
+(- Internship 6.0 (B13): Road Accidents Exploratory Data Analysis (Infosys Springboard -- April 2026)) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000003700 00000 n 
+0000003770 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3845
+%%EOF
